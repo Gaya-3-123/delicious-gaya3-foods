@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaya3 Delicious Foods</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .search-container {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .search-container input {
+            border: none;
+            padding: 15px;
+            font-size: 1rem;
+            outline: none;
+            flex: 1;
+        }
+        .search-container button {
+            background-color: #cb202d;
+            color: white;
+            border: none;
+            padding: 0 25px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            color: #1c1c1c;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-content h3 {
+            font-size: 1.2rem;
+            color: #1c1c1c;
+            margin-bottom: 8px;
+        }
+        .card-content p {
+            color: #696969;
+            font-size: 0.95rem;
+        }
+        footer {
+            background-color: #f8f8f8;
+            border-top: 1px solid #e8e8e8;
+            text-align: center;
+            padding: 30px;
+            color: #4f4f4f;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Gaya3 Delicious Foods</h1>
+        <p>Discover the best food & drinks in your area</p>
+        <div class="search-container">
+            <input type="text" placeholder="Search for restaurant, cuisine or a dish...">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Popular Collections</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=80" alt="Order Online">
+                <div class="card-content">
+                    <h3>Order Online</h3>
+                    <p>Stay home and order to your doorstep</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80" alt="Dining">
+                <div class="card-content">
+                    <h3>Dining Out</h3>
+                    <p>View the city's favourite dining venues</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=500&q=80" alt="Nightlife">
+                <div class="card-content">
+                    <h3>Nightlife & Clubs</h3>
+                    <p>Explore the city's top nightlife spots</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Gaya3 Delicious Foods. Managed via AWS DevOps Pipeline.</p>
+    </footer>
+
+</body>
+</html>
